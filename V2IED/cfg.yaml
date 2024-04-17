@@ -1,0 +1,27 @@
+mode:
+  name: train # or test 
+train:
+  save_path: /data/zhangliang/dyrad/dyrad_experiment/multimodal/singlemodal/SFL/cross_0
+  epochs: 300
+  batch_size: 80 
+  device: cuda:3
+
+  decision_stragety: SFL # decision_f or decision_concate_f or concate  or single
+
+data:
+  data_path: /data/zhangliang/dyrad/dyrad_processed/*.tfrecord
+  data_usage: 
+    name: 'cross_validation'
+    folds: 5
+    cross_seed: 0
+
+
+optimizer:
+  name: 'SGD' # 'SGD' or 'Adam'
+  params:
+    lr: 0.0001
+    momentum: 0.9
+    weight_decay: 0.0001
+    # betas: 0.9, 0.999
+  weight_decayway: V2IED
+
