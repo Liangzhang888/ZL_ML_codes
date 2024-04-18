@@ -27,4 +27,4 @@
 
 ```
 
-As the results of my experiment did not meet the results mentioned in the paper, I only reproduced until the end of the Cate method, and the subsequent methods were not reproduced.
+As the results of my experiment did not meet the results mentioned in the paper without Anchoring IED peak, which is introduced in Section 3.3.1 in the V2IED paper. I only reproduced until the end of the Cate method, and the subsequent methods were not reproduced.
